@@ -3,6 +3,8 @@
   import content from "../../content/content.json";
   let path = `../../content/${content.profileImage}`;
   let profile = "";
+  let phraseList = ["Hello! I am","ನಮಸ್ಕಾರ! ನಾನು","हॅलो! हांव","नमस्ते! मैं हूँ", "హలో! నేను", "வணக்கம்! நான்", "नमस्कार! मी आहे", "Hola yo soy", "Ciao! Sono", "Bonjour! Je suis", "Hello! I am"]
+  let phraseIndex = 0;
   onMount(async () => {
     profile = (await import(path)).default;
     typing();
@@ -20,33 +22,22 @@
     index = typedChar.length;
   }
 
-  // Disable START button; prevent clicking twice
   let isTyping = false;
-
-  // // AUDIO SFX
-  // const typingSFX = [
-  //   "https://assets.codepen.io/504854/type_1.mp3",
-  //   "https://assets.codepen.io/504854/type_2.mp3",
-  //   "https://assets.codepen.io/504854/type_3.mp3",
-  // ];
-
-  // const playSFX = () => {
-  //   let random = Math.floor(Math.random() * typingSFX.length);
-  //   let url = typingSFX[random];
-  //   let keySFX = new Audio(url);
-
-  //   keySFX.play();
-  //   keySFX.volume = Math.random();
-  // };
 
   const typeChar = () => {
     if (index < phrase.length) {
       isTyping = true;
       typedChar += phrase[index];
-      // playSFX();
       index += 1;
     } else {
-      stopTyping();
+      index = 0;
+      if(phraseIndex < phraseList.length -1){
+        phraseIndex += 1;
+      } else {
+        stopTyping();
+      }
+      typedChar=""
+      phrase=phraseList[phraseIndex]
       return;
     }
   };
@@ -60,7 +51,7 @@
 </script>
 
 <section
-  class="text-center md:p-[7em] min-h-[100vh] flex flex-col justify-center"
+  class="relative text-center md:p-[7em] min-h-[100vh] flex flex-col justify-center"
 >
   <div class="max-w-[1344px] mx-auto">
     <div
@@ -69,7 +60,7 @@
       <!-- <img src={profile} alt={content.name} class="object-cover" /> -->
     </div>
     <div class="text-5xl">
-      <p class="pr-[8px] md:inline">{typedChar}</p>
+      <p class="pr-[8px] md:inline min-h-[50px]">{typedChar}</p>
       <h1 class="font-semibold text-5xl leading-2 md:inline text-[#face55]">
         {content.name}
       </h1>
@@ -79,5 +70,8 @@
     >
       {content.description}
     </article>
+  </div>
+  <div class="hidden lg:block absolute bottom-4 w-[25px] h-[40px] border-2 border-black rounded-[35%] left-[50%]">
+    <span class="text-3xl leading-0 block animate-bounce duration-100">.</span>
   </div>
 </section>

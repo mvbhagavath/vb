@@ -18,7 +18,7 @@
     <aside class="text-lg lg:col-span-6">
       {@html content.knowMeSection.content}
     </aside>
-    <aside class="p-[3em] lg:col-span-6">
+    <aside class="px-[3em] lg:col-span-6 ">
       <img src={developer} alt={"developer"} class="w-[100%]" />
     </aside>
   </div>

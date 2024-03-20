@@ -59,7 +59,7 @@
     {#each content.headerLinks as item}
       <li>
         <a
-          class="px-[16px] cursor-pointer hover:text-[#face55]"
+          class="px-[16px] cursor-pointer hover:text-[#face55] font-medium"
           href={`/${getIDFromName(item)}`}
           tabindex="0">{item}</a
         >

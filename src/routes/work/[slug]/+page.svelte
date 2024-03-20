@@ -98,7 +98,7 @@
                 style="color: transparent;"
               />
             </div>
-            <p class="text-black text-sm sm:text-lg">{workItem.name}</p>
+            <p class="text-black text-sm">{workItem.name}</p>
           </div>
         {/each}
       </div>

@@ -29,7 +29,7 @@
 </script>
 
 <div
-  class="relative shadow-lg rounded-lg cursor-pointer h-[100%]"
+  class="relative shadow-lg rounded-lg cursor-pointer h-[100%] hover:scale-105 transition-all ease-in-out group"
   on:click={handleRouting}
   on:keypress={handleKeyDown}
   role="button"
@@ -41,10 +41,8 @@
     on:error={handleImageLoadError}
     class="rounded-lg w-[100%] h-[100%] object-cover"
   />
-  <!-- <div class="p-[1em]">
-    <h5>{item.name}</h5>
-    <div class="">
-      {item.description}
-    </div>
-  </div> -->
+  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute left-0 bottom-0 right-0 z-10 text-xl text-[#face55] flex flex-col justify-between font-semibold h-[100%] bg-black bg-opacity-60 text-center p-[2em] rounded-lg">
+    <h3 class="text-2xl ">{item.name}</h3>
+    <span class="text-sm p-[8px] max-w-[60%] mx-auto rounded-lg border border-[#face55]">View this Project</span>
+  </div>
 </div>
