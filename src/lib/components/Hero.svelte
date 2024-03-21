@@ -59,7 +59,7 @@
     </div>
     <div class="text-5xl">
       <p class="pr-[8px] md:inline min-h-[50px] leading-5 mb-[4px] md:mb-0">{typedChar}</p>
-      <h1 class="font-semibold text-5xl leading-5 md:inline text-[#face55]">
+      <h1 class="font-semibold text-5xl leading-[1.2] md:leading-[1] md:inline text-[#face55]">
         {content.name}
       </h1>
     </div>
