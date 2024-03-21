@@ -43,13 +43,7 @@
       {/if}
     </div>
     <ul class="flex justify-center md:justify-start">
-      <li class="mr-[8px]">
-        {@html getSocialWidget(
-          "instagram",
-          content.getInTouchSection.socials.instagram,
-          instagram
-        )}
-      </li>
+      {#if content.getInTouchSection.socials.gitHub !== ""} 
       <li class="mr-[8px] w-[40px]">
         {@html getSocialWidget(
           "github",
@@ -57,6 +51,8 @@
           github
         )}
       </li>
+      {/if}
+      {#if content.getInTouchSection.socials.linkedIn !== ""} 
       <li class="mr-[8px]">
         {@html getSocialWidget(
           "linkedIn",
@@ -64,6 +60,17 @@
           linkedin
         )}
       </li>
+      {/if}
+      {#if content.getInTouchSection.socials.instagram !== ""} 
+        <li class="mr-[8px]">
+          {@html getSocialWidget(
+            "instagram",
+            content.getInTouchSection.socials.instagram,
+            instagram
+          )}
+        </li>
+      {/if}
+      {#if content.getInTouchSection.socials.facebook !== ""} 
       <li class="mr-[8px]">
         {@html getSocialWidget(
           "facebook",
@@ -71,9 +78,12 @@
           facebook
         )}
       </li>
+      {/if}
+      {#if content.getInTouchSection.socials.x !== ""} 
       <li class="mr-[8px]">
         {@html getSocialWidget("x", content.getInTouchSection.socials.x, x)}
       </li>
+      {/if}
     </ul>
   </div>
 </section>

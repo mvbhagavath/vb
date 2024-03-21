@@ -22,7 +22,7 @@
   >
     {#each content.headerLinks as item}
       <li >
-        <a href={`/${getIDFromName(item)}`} class="px-[16px] cursor-pointer hover:text-[#face55]">{item}</a>
+        <a href={`/${getIDFromName(item)}`} class="p-[1em] cursor-pointer hover:text-[#face55]">{item}</a>
       </li>
     {/each}
   </ul>
