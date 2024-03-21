@@ -38,6 +38,7 @@
   <img
     src={image}
     alt={item.name}
+    title={item.name}
     on:error={handleImageLoadError}
     class="rounded-lg w-[100%] h-[100%] object-cover"
   />

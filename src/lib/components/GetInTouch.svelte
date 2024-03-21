@@ -12,7 +12,7 @@
 
   const getSocialWidget = (name: string, link: string, icon?: string) => {
     return `<a href=${link} target="_blank" class="w-[50px] h-[50px]">
-      <img src=${icon} alt=${name}/>
+      <img src=${icon} alt="${name}" title="${name}"/>
       </a>`;
   };
 </script>

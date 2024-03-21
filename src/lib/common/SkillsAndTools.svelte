@@ -10,12 +10,12 @@
 <div class="flex flex-col items-center justify-center gap-3 p-6">
   <div class="h-8 sm:h-10">
     <img
-      alt="Go"
+      alt={workItem.name}
+      title={workItem.name}
       loading="lazy"
       width="40"
       height="40"
       decoding="async"
-      data-nimg="1"
       class="h-full w-auto rounded-lg"
       src={image}
       style="color: transparent;"

@@ -10,13 +10,12 @@
   import { onMount } from "svelte";
   import work from "$lib/images/work.png";
   import SkillsAndTools from "$lib/common/SkillsAndTools.svelte";
-  let path = ``;
   let image = "";
 
   const handleImageLoadError = (ev: any) => (ev.target.src = work);
   const getSocialWidget = (name: string, link: string, icon?: string) => {
     return `<a href=${link} target="_blank" class="w-[50px] h-[50px] p-[0.5em]">
-      <img src=${icon} alt=${name}/>
+      <img src=${icon} alt="${name}" title="${name}"/>
       </a>`;
   };
 
@@ -68,6 +67,7 @@
       <img
         src={image}
         alt={content.myWorkSection.workList[index].name}
+        title={content.myWorkSection.workList[index].name}
         on:error={handleImageLoadError}
         class="rounded-lg w-[100%] h-[100%] object-cover shadow-lg"
       />
@@ -82,9 +82,6 @@
       <h3 class="text-2xl font-semibold mb-[1em]">Skills & Tools</h3>
       <div class="flex flex-wrap">
         {#each content.myWorkSection.workList[index].skillsAndTools as workItem, i}
-          <!-- <div class="p-[1em] mr-[0.5em] shadow-md rounded-lg">
-            <span>{workItem}</span>
-          </div> -->
           <SkillsAndTools {workItem}/>
         {/each}
       </div>

@@ -3,11 +3,12 @@
   import Hero from "../lib/components/Hero.svelte";
   import KnowMe from "../lib/components/KnowMe.svelte";
   import MyWork from "../lib/components/MyWork.svelte";
+  import content from "../content/content.json";
 </script>
 
 <svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Vignesh Bhagavath" />
+  <title>{content.name}</title>
+  <meta name="description" content={content.description} />
 </svelte:head>
 
 <div class="scroll-smooth overflow-y-scroll">

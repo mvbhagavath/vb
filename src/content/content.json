@@ -30,35 +30,35 @@
         "skillsAndTools": [
           {
             "name": "HTML",
-            "icon": "html.svg"
+            "icon": "html"
           },
           {
             "name": "CSS",
-            "icon": "css3.svg"
+            "icon": "css3"
           },
           {
             "name": "React",
-            "icon": "react.svg"
+            "icon": "react"
           },
           {
             "name": "Redux",
-            "icon": "redux.svg"
+            "icon": "redux"
           },
           {
             "name": "Javascript",
-            "icon": "javascript.svg"
+            "icon": "javascript"
           },
           {
             "name": "Typescript",
-            "icon": "typescript.svg"
+            "icon": "typescript"
           },
           {
             "name": "Next.js",
-            "icon": "nextjs.svg"
+            "icon": "nextjs"
           },
           {
             "name": "TailwindCSS",
-            "icon": "tailwindcss.svg"
+            "icon": "tailwindcss"
           }
         ]
       },
@@ -74,31 +74,31 @@
         "skillsAndTools": [
           {
             "name": "HTML",
-            "icon": "html.svg"
+            "icon": "html"
           },
           {
             "name": "CSS",
-            "icon": "css3.svg"
+            "icon": "css3"
           },
           {
             "name": "React",
-            "icon": "react.svg"
+            "icon": "react"
           },
           {
             "name": "Javascript",
-            "icon": "javascript.svg"
+            "icon": "javascript"
           },
           {
             "name": "Typescript",
-            "icon": "typescript.svg"
+            "icon": "typescript"
           },
           {
             "name": "Next.js",
-            "icon": "nextjs.svg"
+            "icon": "nextjs"
           },
           {
             "name": "TailwindCSS",
-            "icon": "tailwindcss.svg"
+            "icon": "tailwindcss"
           }
         ]
       },
@@ -115,11 +115,11 @@
         "skillsAndTools": [
           {
             "name": "Flutter",
-            "icon": "flutter.svg"
+            "icon": "flutter"
           },
           {
             "name": "Firebase",
-            "icon": "firebase.svg"
+            "icon": "firebase"
           }
         ]
       },
