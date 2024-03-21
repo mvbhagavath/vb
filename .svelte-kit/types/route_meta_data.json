@@ -1,8 +1,0 @@
-{
-	"/": [
-		"src/routes/+page.ts"
-	],
-	"/work/[slug]": [
-		"src/routes/work/[slug]/+page.ts"
-	]
-}

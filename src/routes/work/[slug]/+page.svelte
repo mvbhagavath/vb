@@ -9,7 +9,8 @@
 
   import { onMount } from "svelte";
   import work from "$lib/images/work.png";
-  let path = `../../../content/${content.myWorkSection.workList[index].workImage}`;
+  import SkillsAndTools from "$lib/common/SkillsAndTools.svelte";
+  let path = ``;
   let image = "";
 
   const handleImageLoadError = (ev: any) => (ev.target.src = work);
@@ -20,7 +21,7 @@
   };
 
   onMount(async () => {
-    image = (await import(path)).default;
+    image = (await import(`../../../content/${content.myWorkSection.workList[index].workImage}.png`)).default;
   });
 </script>
 
@@ -84,22 +85,7 @@
           <!-- <div class="p-[1em] mr-[0.5em] shadow-md rounded-lg">
             <span>{workItem}</span>
           </div> -->
-          <div class="flex flex-col items-center justify-center gap-3 p-6">
-            <div class="h-8 sm:h-10">
-              <img
-                alt="Go"
-                loading="lazy"
-                width="40"
-                height="40"
-                decoding="async"
-                data-nimg="1"
-                class="h-full w-auto rounded-lg"
-                src={`/src/content/${workItem.icon}`}
-                style="color: transparent;"
-              />
-            </div>
-            <p class="text-black text-sm">{workItem.name}</p>
-          </div>
+          <SkillsAndTools {workItem}/>
         {/each}
       </div>
     </section>

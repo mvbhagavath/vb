@@ -5,11 +5,11 @@
 
   export let item: any;
   export let index: number;
+  let image = "";
   let path =
     item.workImage && item.workImage !== ""
-      ? `../../content/${item.workImage}`
+      ? ``
       : work;
-  let image = "";
 
   const handleImageLoadError = (ev: any) => (ev.target.src = work);
 
@@ -24,7 +24,7 @@
   };
 
   onMount(async () => {
-    image = (await import(path)).default;
+    image = (await import(`../../content/${item.workImage}.png`)).default;
   });
 </script>
 

@@ -1,19 +1,17 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import content from "../../content/content.json";
-  let path = `../../content/${content.profileImage}`;
   let profile = "";
   let phraseList = ["Hello! I am","ನಮಸ್ಕಾರ! ನಾನು","हॅलो! हांव","नमस्ते! मैं हूँ", "హలో! నేను", "வணக்கம்! நான்", "नमस्कार! मी आहे", "Hola yo soy", "Ciao! Sono", "Bonjour! Je suis", "Hello! I am"]
   let phraseIndex = 0;
   onMount(async () => {
-    profile = (await import(path)).default;
     typing();
+    profile = (await import(`../../content/${content.profileImage}.jpg`)).default;
   });
 
-  let phrase = "Hello! I am"; // text to be typed
+  let phrase = phraseList[0]; // text to be typed
   let typedChar = ""; // SECTION displaying typed text
   let index = 0;
-  // $: console.log(index);
   let typewriter: number; // for setInterval/clearInterval
 
   // If Input is empty, clear out SECTION displaying typed text
@@ -33,10 +31,10 @@
       index = 0;
       if(phraseIndex < phraseList.length -1){
         phraseIndex += 1;
+        typedChar=""
       } else {
         stopTyping();
       }
-      typedChar=""
       phrase=phraseList[phraseIndex]
       return;
     }
@@ -55,9 +53,9 @@
 >
   <div class="max-w-[1344px] mx-auto">
     <div
-      class={`w-[275px] h-[275px] mx-auto mb-[48px] rounded-[50%] bg-[url('src/content/profile.jpg')] bg-cover`}
+      style={`background-image: url('${profile}');`}
+      class={`w-[275px] h-[275px] mx-auto mb-[48px] rounded-[50%]  bg-cover`}
     >
-      <!-- <img src={profile} alt={content.name} class="object-cover" /> -->
     </div>
     <div class="text-5xl">
       <p class="pr-[8px] md:inline min-h-[50px]">{typedChar}</p>
