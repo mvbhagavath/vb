@@ -4,7 +4,7 @@
   import Header from "../lib/components/Header.svelte";
 </script>
 
-<div class="app w-[100vw] mx-auto">
+<div class="app w-[100vw] mx-auto font-roboto">
   <main>
     <slot />
   </main>

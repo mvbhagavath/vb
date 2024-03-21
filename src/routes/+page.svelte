@@ -11,7 +11,7 @@
   <meta name="description" content={content.description} />
 </svelte:head>
 
-<div class="scroll-smooth overflow-y-scroll">
+<div class="scroll-smooth overflow-y-scroll font-roboto">
   <Hero />
   <KnowMe />
   <MyWork />

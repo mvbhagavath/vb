@@ -22,13 +22,13 @@
   class="md:min-h-[50vh] py-[4em] px-[3em] md:p-[7em] bg-[#face55]"
 >
   <div class="max-w-[1344px] mx-auto">
-    <h2 class="text-3xl font-semibold leading-2 mb-[16px] col-span-12">
+    <h2 class="text-3xl font-semibold leading-5 mb-[16px] col-span-12">
       {content.getInTouchSection.title}
     </h2>
     <article>
       {content.getInTouchSection.description}
     </article>
-    <ul class="mb-[32px]">
+    <div class="mb-[32px]">
       {#if content.getInTouchSection.email !== ""}
         <span>Drop a mail @ </span><a
           class="hover:underline"
@@ -41,7 +41,7 @@
           >{content.getInTouchSection.phone}</a
         >
       {/if}
-    </ul>
+    </div>
     <ul class="flex justify-center md:justify-start">
       <li class="mr-[8px]">
         {@html getSocialWidget(

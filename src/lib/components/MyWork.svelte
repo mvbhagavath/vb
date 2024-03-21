@@ -23,10 +23,10 @@
   class="min-h-[100vh] py-[6em] px-[3em] md:p-[7em]"
 >
   <div class="max-w-[1344px] mx-auto">
-    <h2 class="text-3xl font-semibold leading-2 mb-[32px]">
+    <h2 class="text-3xl font-semibold leading-5 mb-[32px]">
       {content.myWorkSection.title}
     </h2>
-    <div class="text-xl leading-2 mb-[32px]">
+    <div class="text-xl leading-5 mb-[32px]">
       {@html content.myWorkSection.description}
     </div>
     <div class={`md:grid md:gap-12 md:grid-cols-2 ${getGridColCass()} `}>

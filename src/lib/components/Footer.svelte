@@ -6,7 +6,7 @@
 </script>
 
 <footer class="p-[12px] text-center bg-black">
-  <div class="mb-[60px] md:mb-0 text-white">
+  <div class="mb-[60px] md:mb-0 text-white text-sm">
     <spn class="mr-[5px]">© Copyright 2024 </spn>
     <span
       >Made by

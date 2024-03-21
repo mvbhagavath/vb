@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import content from "../../content/content.json";
   let profile = "";
-  let phraseList = ["Hello! I am","ನಮಸ್ಕಾರ! ನಾನು","हॅलो! हांव","नमस्ते! मैं हूँ", "హలో! నేను", "வணக்கம்! நான்", "नमस्कार! मी आहे", "Hola yo soy", "Ciao! Sono", "Bonjour! Je suis", "Hello! I am"]
+  let phraseList = ["Hello! I am","ನಮಸ್ಕಾರ! ನಾನು","हॅलो! हांव","नमस्ते! मैं हूँ", "హలో! నేను", "வணக்கம்! நான்", "नमस्कार! मी आहे", "Hola! yo soy", "Ciao! Sono", "Bonjour! Je suis", "Hello! I am"]
   let phraseIndex = 0;
   onMount(async () => {
     typing();
@@ -58,8 +58,8 @@
     >
     </div>
     <div class="text-5xl">
-      <p class="pr-[8px] md:inline min-h-[50px]">{typedChar}</p>
-      <h1 class="font-semibold text-5xl leading-2 md:inline text-[#face55]">
+      <p class="pr-[8px] md:inline min-h-[50px] leading-5 mb-[4px] md:mb-0">{typedChar}</p>
+      <h1 class="font-semibold text-5xl leading-5 md:inline text-[#face55]">
         {content.name}
       </h1>
     </div>
