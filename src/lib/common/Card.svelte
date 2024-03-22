@@ -44,6 +44,6 @@
   />
   <div class="opacity-0 group-focus-visible:opacity-100 group-hover:opacity-100 duration-300 absolute left-0 bottom-0 right-0 z-10 text-xl text-[#face55] flex flex-col justify-between font-semibold h-[100%] bg-black bg-opacity-60 text-center p-[2em] rounded-lg">
     <h3 class="text-2xl ">{item.name}</h3>
-    <span class="text-sm p-[8px] max-w-[60%] mx-auto rounded-lg border border-[#face55]">View this Project</span>
+    <span class="text-sm p-[8px] max-w-[60%] mx-auto rounded-lg border border-[#face55] hover:text-black hover:bg-[#face55]">View this Project</span>
   </div>
 </div>

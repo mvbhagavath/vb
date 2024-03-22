@@ -12,7 +12,7 @@
   class="py-[6em] px-[3em] md:p-[7em] bg-[#face55] min-h-[100vh]"
 >
   <div class="max-w-[1344px] mx-auto lg:grid grid-cols-12">
-    <h2 class="text-3xl font-semibold leading-5 mb-[16px] col-span-12">
+    <h2 class="text-2xl md:text-3xl font-semibold leading-[1.2] mb-[16px] col-span-12">
       {content.knowMeSection.title}
     </h2>
     <aside class="text-lg lg:col-span-6">

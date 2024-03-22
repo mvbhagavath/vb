@@ -19,16 +19,16 @@
 
 <section
   id={getIDFromName(content.headerLinks[2])}
-  class="md:min-h-[50vh] py-[4em] px-[3em] md:p-[7em] bg-[#face55]"
+  class="py-[4em] px-[2em] md:p-[7em] bg-[#face55]"
 >
   <div class="max-w-[1344px] mx-auto">
     <h2 class="text-3xl font-semibold leading-5 mb-[16px] col-span-12">
       {content.getInTouchSection.title}
     </h2>
-    <article>
+    <article class="text-lg">
       {content.getInTouchSection.description}
     </article>
-    <div class="mb-[32px]">
+    <div class="mb-[32px] text-lg">
       {#if content.getInTouchSection.email !== ""}
         <span>Drop a mail @ </span><a
           class="hover:underline"

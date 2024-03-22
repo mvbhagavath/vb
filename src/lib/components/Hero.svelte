@@ -49,22 +49,22 @@
 </script>
 
 <section
-  class="relative text-center md:p-[7em] min-h-[100vh] flex flex-col justify-center"
+  class="relative text-center mt-[90px] p-[2em] md:p-[7em] min-h-[100vh] flex flex-col justify-center"
 >
   <div class="max-w-[1344px] mx-auto">
     <div
       style={`background-image: url('${profile}');`}
-      class={`w-[275px] h-[275px] mx-auto mb-[48px] rounded-[50%]  bg-cover`}
+      class={`w-[275px] h-[275px] mx-auto mb-[48px] rounded-[50%] bg-cover`}
     >
     </div>
-    <div class="text-5xl">
-      <p class="pr-[8px] md:inline min-h-[50px] leading-5 mb-[4px] md:mb-0">{typedChar}</p>
-      <h1 class="font-semibold text-5xl leading-[1.2] md:leading-[1] md:inline text-[#face55]">
+    <div class="text-4xl md:text-5xl">
+      <p class="lg:pr-[8px] lg:inline min-h-[50px] lg:leading-5 mb-[4px] md:mb-0">{typedChar}</p>
+      <h1 class="font-semibold text-4xl md:text-5xl leading-[1.2] md:leading-[1] md:inline text-[#face55]">
         {content.name}
       </h1>
     </div>
     <article
-      class="my-[24px] text-2xl max-w-[70%] md:max-w-[60%] text-center mx-auto"
+      class="my-[24px] text-lg md:text-xl lg:max-w-[60%] text-center mx-auto"
     >
       {content.description}
     </article>

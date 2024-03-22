@@ -28,7 +28,7 @@
   class="min-h-95vh py-[6em] px-[3em] md:px-[10em] max-w-[1344px] mx-auto"
 >
   <div class="my-[48px] text-center">
-    <h1 class="text-5xl font-semibold mb-[24px]">
+    <h1 class="text-4xl lg:text-5xl font-semibold mb-[24px]">
       {content.myWorkSection.workList[index].name}
     </h1>
     <div class="flex items-center justify-center">
@@ -74,12 +74,12 @@
     </div>
   {/if}
   <div class="py-[3em] lg:p-[5em]">
-    <h2 class="text-3xl font-semibold">About this project</h2>
+    <h2 class="tet-2xl lg:text-3xl font-semibold">About this project</h2>
     <article class="text-lg my-[2em]">
       {@html content.myWorkSection.workList[index].description}
     </article>
     <section class="">
-      <h3 class="text-2xl font-semibold mb-[1em]">Skills & Tools</h3>
+      <h3 class="text-xl font-semibold mb-[1em]">Skills & Tools</h3>
       <div class="flex flex-wrap">
         {#each content.myWorkSection.workList[index].skillsAndTools as workItem, i}
           <SkillsAndTools {workItem}/>
